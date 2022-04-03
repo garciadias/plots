@@ -1,0 +1,13 @@
+name: clustering
+channels:
+  - defaults
+dependencies:
+  - pip=20.2.4=py37_0
+  - python=3.7.0=h6e4f718_3
+  - pip:
+    - ipykernel==6.11.0
+    - matplotlib==3.5.1
+    - numpy==1.21.5
+    - pandas==1.1.5
+    - scikit-learn==1.0.2
+    - seaborn==0.11.2
