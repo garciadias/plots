@@ -94,15 +94,15 @@ if __name__ == '__main__':
     # Don't forget to update with your class column
     class_column = "class"
     box_plot(DATASET, class_column=class_column)
-    plt.savefig("figs/boxplot_grid.png", dpi=150)
+    plt.savefig("figs/boxplot_grid.png", dpi=100)
     plt.close()
 
     if DATASET.shape[1] <= 10:
         pair_plot(DATASET, class_column=class_column)
-        plt.savefig("figs/pair_plot.png", dpi=150)
+        plt.savefig("figs/pair_plot.png", dpi=100)
         plt.close()
     else:
         print("There are too many columns for a pair plot.")
 
     parallel_plot(DATASET, class_column=class_column)
-    plt.savefig("figs/parallel_plot.png", dpi=150)
+    plt.savefig("figs/parallel_plot.png", dpi=100)
